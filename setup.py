@@ -58,11 +58,11 @@ class package_installer():
               description=self.description)
 
 package_installer(name = "rfsoc_ofdm",
-                  version = "0.3.5",
+                  version = "0.4.0",
                   description  = "PYNQ example of an OFDM transmitter and receiver on RFSoC.",
                   author = "Lewis Davin McLaughlin",
                   email = "lewis.mclaughlin@strath.ac.uk",
                   license = "BSD 3-Clause License",
                   url = "https://github.com/strath-sdr/rfsoc_ofdm.git",
-                  pynq_version = "pynq>=2.7",
+                  pynq_version = "pynq==3.0.1",
                   board = os.environ['BOARD'])
