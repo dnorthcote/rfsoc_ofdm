@@ -16,4 +16,5 @@ zcu111:
 	$(MAKE) -C boards/ZCU111/rfsoc_ofdm/
 
 tarball:
+	mkdir outputs
 	tar -czvf outputs/rfsoc_ofdm.tar.gz --exclude=./outputs .
