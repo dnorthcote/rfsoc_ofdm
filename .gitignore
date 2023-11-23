@@ -24,6 +24,7 @@
 *vivado.log
 
 # Ignore the block design
+*\outputs
 **/block_design
 **/bitstream
 rfsoc_ofdm.tar.gz
