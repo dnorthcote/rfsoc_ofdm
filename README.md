@@ -12,7 +12,7 @@
 </table>
 
 # RFSoC OFDM Transceiver
-This repository contains an RFSoC demonstration of an Orthogonal Frequency Division Multiplexing (OFDM) transceiver. The OFDM system is only compatible with [PYNQ images v2.7](https://github.com/Xilinx/PYNQ/releases) and greater for the following RFSoC development boards:
+This repository contains an RFSoC demonstration of an Orthogonal Frequency Division Multiplexing (OFDM) transceiver. The OFDM system is only compatible with [PYNQ images v3.0.1](https://github.com/Xilinx/PYNQ/releases) for the following RFSoC development boards:
 * [ZCU208](https://www.xilinx.com/products/boards-and-kits/zcu208.html),
 * [ZCU216](https://www.xilinx.com/products/boards-and-kits/zcu216.html),
 * [ZCU111](https://www.xilinx.com/products/boards-and-kits/zcu111.html),
@@ -25,7 +25,7 @@ This repository contains an RFSoC demonstration of an Orthogonal Frequency Divis
 
 ## Quick Start
 Follow the instructions below to install the OFDM demonstrator on your development board. **You will need to give your board access to the internet**.
-* Power on your RFSoC development board with an SD Card containing a fresh PYNQ v2.7 image or greater.
+* Power on your RFSoC development board with an SD Card containing a fresh PYNQ v3.0.1 image.
 * Navigate to Jupyter Labs by opening a browser (preferably Chrome) and connecting to `http://<board_ip_address>:9090/lab`.
 * We need to open a terminal in Jupyter Lab. Firstly, open a launcher window as shown in the figure below:
 
@@ -42,7 +42,7 @@ Follow the instructions below to install the OFDM demonstrator on your developme
 * Now execute the following command in the terminal:
 
 ```sh
-pip3 install https://github.com/strath-sdr/rfsoc_ofdm/releases/download/v0.3.5/rfsoc_ofdm.tar.gz
+pip3 install https://github.com/strath-sdr/rfsoc_ofdm/releases/download/v0.4.0/rfsoc_ofdm.tar.gz
 python -m rfsoc_ofdm install
 ```
 
@@ -51,11 +51,11 @@ It is important that you use the Chrome web browser if possible as rendering per
 
 ## Using the Project Files
 The following software is required to use the project files in this repository.
-- Vivado Design Suite 2020.2
+- Vivado Design Suite 2022.1
 - MATLAB R2020a
 
 ### Vivado
-This project can be built with Vivado from the command line. Open Vivado 2020.1 and execute the following into the tcl console:
+This project can be built with Vivado from the command line. Open Vivado 2022.1 and execute the following into the tcl console:
 ```sh
 cd /<repository-location>/boards/<board-name>/rfsoc_ofdm/
 make block_design
